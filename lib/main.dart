@@ -12,11 +12,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Peliculas',
-      initialRoute: "home",
+      title: 'FitBuddy',
+      initialRoute: 'login',
       routes: {
-        "home": (_)=> const HomeScreen(),
-        "details": (_)=> const DetailsScreen(),
+        'login': (_) => const LoginScreen(),
+        'home': (_) => const HomeScreen(),
+        'details': (_) => const DetailsScreen(),
       },
 
       theme: ThemeData.light().copyWith(
